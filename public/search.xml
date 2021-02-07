@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Fish Shell</title>
+      <link href="2021/02/05/fish-shell/"/>
+      <url>2021/02/05/fish-shell/</url>
+      
+        <content type="html"><![CDATA[<h3 id="Fish-Shell-比-zsh-更简洁实用的-Shell"><a href="#Fish-Shell-比-zsh-更简洁实用的-Shell" class="headerlink" title="Fish Shell - 比 zsh 更简洁实用的 Shell"></a>Fish Shell - 比 zsh 更简洁实用的 Shell</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">一直没有兴趣折腾 zsh，安装了 </span><br><span class="line">oh-my-zsh</span><br><span class="line"> 也是无奈之举，配置起来异常繁琐，关键还很不流畅。最近想添加个文件子目录自动补齐的功能，愣是没配置成功。所以，我果断尝试了一下 fish shell。</span><br></pre></td></tr></table></figure><h3 id="fish-shell-吸引我的地方"><a href="#fish-shell-吸引我的地方" class="headerlink" title="fish shell 吸引我的地方"></a>fish shell 吸引我的地方</h3><ol><li>完全不需要配置，开箱即用（Works Out Of The Box，学了个新词）。省去了 zsh 和 oh-my-zsh 的配置麻烦。</li><li>基于 history 自动提示</li><li>可以自动补齐路径，例如，路径中使用 ** 自动补全子目录</li><li>语法更人性化一些。例如，for 循环等，比 bash 的反人类语法好很多。</li><li>文档写的挺有意思</li></ol><p>ubuntu 18.04 上安装 fish shell</p><figure class="highlight ps"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo apt<span class="literal">-add</span><span class="literal">-repository</span> ppa:fish<span class="literal">-shell</span>/release<span class="literal">-2</span></span><br><span class="line">sudo apt<span class="literal">-get</span> update</span><br><span class="line">sudo apt<span class="literal">-get</span> install fish</span><br><span class="line">启动 fish shell</span><br><span class="line"><span class="variable">$</span> fish</span><br></pre></td></tr></table></figure><h4 id="我才明白为何-shell-脚本第一行要加"><a href="#我才明白为何-shell-脚本第一行要加" class="headerlink" title="我才明白为何 shell 脚本第一行要加"></a>我才明白为何 shell 脚本第一行要加</h4><p>#!/bin/bash</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">因为不同 shell 的语法不同，所以需要指明 shell 类型。</span><br><span class="line">例如 fish shell 与 bash shell 的 for 循环语法就不一致。</span><br><span class="line">但是，这并不妨碍我们在 fish shell 中执行 bash shell 语法写的脚本。</span><br></pre></td></tr></table></figure><h4 id="设置-tmux-默认使用-fish-shell"><a href="#设置-tmux-默认使用-fish-shell" class="headerlink" title="设置 tmux 默认使用 fish shell"></a>设置 tmux 默认使用 fish shell</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">~&#x2F;.tmux.conf</span><br><span class="line">set -g default-shell &#x2F;usr&#x2F;bin&#x2F;fish </span><br><span class="line">set -g default-command &#x2F;usr&#x2F;bin&#x2F;fish </span><br><span class="line">fish_config 基于网页视图修改 fish shell 配置</span><br><span class="line">非常有创意</span><br><span class="line">$ fish_config</span><br><span class="line">Web config started at &#39;file:&#x2F;&#x2F;&#x2F;home&#x2F;zhongwei&#x2F;.cache&#x2F;fish&#x2F;web_config-GP7QKR.html&#39;. Hit enter to stop.</span><br></pre></td></tr></table></figure><p>参考</p><p><a href="https://fishshell.com/">https://fishshell.com/</a></p><p>配合fish使用终极搜索神器fzf</p><p>~/.config/fish/functions/fish_user_key_bindings.fish</p><p>function fish_user_key_bindings fzf_key_bindings end</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Markdown </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> liunx </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>liunx_JAVA环境便捷工具</title>
+      <link href="2021/02/03/liunx-java-huan-jing-bian-jie-gong-ju/"/>
+      <url>2021/02/03/liunx-java-huan-jing-bian-jie-gong-ju/</url>
+      
+        <content type="html"><![CDATA[<h3 id="1-sdkman介绍"><a href="#1-sdkman介绍" class="headerlink" title="1.sdkman介绍"></a>1.sdkman介绍</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">  sdkman(The Software Development Kit Manager), 中文名为:软件开发工具管理器．这个工具的主要用途是用来解决在类unix</span><br><span class="line">　操作系统(如mac, linux等)中多种版本开发工具的切换, 安装和卸载的工作．对于windows系统的用户可以使用Powershell CLI来体验．</span><br><span class="line">　例如: 项目A使用Jdk7中某些特性在后续版本中被移除（尽管这是不好的设计），项目B使用Jdk8,</span><br><span class="line">　我们在切换开发这两个项目的时候，需要不断的切换系统中的JAVA_PATH,这样很不方便，如果存在很多个类似的版本依赖问题，</span><br><span class="line">　就会给工作带来很多不必要的麻烦． </span><br><span class="line">　　 </span><br><span class="line">　sdkman这个工具就可以很好的解决这类问题，它的工作原理是自己维护多个版本，当用户需要指定版本时，</span><br><span class="line">　sdkman会查询自己所管理的多版本软件中对应的版本号，并将它所在的路径设置到系统PATH.</span><br></pre></td></tr></table></figure><h3 id="2-安装"><a href="#2-安装" class="headerlink" title="2.安装"></a>2.安装</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -s http://get.sdkman.io | bash</span><br></pre></td></tr></table></figure><p>上面的命令的含义: 首先sdkman官网下载对应的安装shell script，然后调用bash解析器去执行．</p><p>接下来，你需要打开一个新的终端窗口，执行命令:</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> <span class="string">&quot;<span class="variable">$HOME</span>/.sdkman/bin/sdkman-init.sh&quot;</span></span><br></pre></td></tr></table></figure><p>再次之后，可以通过输入sdk help确认安装是否完成.</p><h3 id="3-使用"><a href="#3-使用" class="headerlink" title="3.使用"></a>3.使用</h3><p>1. 例子:安装jdk最新版本</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"> sdk install jdk</span><br></pre></td></tr></table></figure><p>2. 安装指定版本的软件</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sdk install jdk 8</span><br></pre></td></tr></table></figure><p>3.安装本地版本</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"> sdk install jdk-8 /path/to/jdk-8</span><br></pre></td></tr></table></figure><p>4.删除执行版本</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sdk remove scala 2.11.6</span><br></pre></td></tr></table></figure><p>5.列举可供安装的软件列表</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">    sdk list</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Markdown </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> liunx </tag>
+            
+            <tag> java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>github+hexo搭建博客</title>
+      <link href="2021/02/03/github-hexo-da-jian-bo-ke/"/>
+      <url>2021/02/03/github-hexo-da-jian-bo-ke/</url>
+      
+        <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">原文链接</span><br><span class="line">https:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;p&#x2F;35668237</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> blog </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
