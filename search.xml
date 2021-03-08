@@ -11,6 +11,18 @@
         <content type="html"><![CDATA[<p>JRebel</p><p>JRebel是一款JVM插件，它使得Java代码修改后不用重启系统，立即生效。IDEA上原生是不支持热部署的，一般更新了 Java 文件后要手动重启 Tomcat 服务器，才能生效，浪费时间浪费生命。</p><p>目前对于idea热部署最好的解决方案就是安装JRebel插件。</p><h2 id="简单破解"><a href="#简单破解" class="headerlink" title="简单破解"></a>简单破解</h2><p>我们知道这个插件是收费的，不想交钱怎么办，下面推荐一个破解版本的，我看了网络上面有好多，破解的特别麻烦，烦躁，今天介绍这款方式，绝对让你用着爽，分分钟钟搞定，让你用着舒服，快捷，设置简单。废话不多说。</p><ul><li><p>步骤1:生成一个GUID：</p></li><li><p><a href="https://www.guidgen.com/">在线生成GUID地址</a></p></li><li><p>步骤2: 根据反向代理服务器地址拼接激活地址</p></li><li><p>服务器地址： <a href="https://jrebel.qekang.com/">https://jrebel.qekang.com/</a>{GUID}</p></li></ul><p>如果失效刷新GUID替换就可以！</p><p>步骤3: 打开jrebel 激活面板 . 选择Connect to online licensing service .</p><p><img src="https://ask.qcloudimg.com/http-save/yehe-1257042/5gsp3ebpnm.png?imageView2/2/w/1620"></p><p>激活成功的界面：</p><p><img src="https://ask.qcloudimg.com/http-save/yehe-1257042/z37es3fdou.png?imageView2/2/w/1620"></p>]]></content>
       
       
+      <categories>
+          
+          <category> doc </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> idea </tag>
+            
+        </tags>
       
     </entry>
     
